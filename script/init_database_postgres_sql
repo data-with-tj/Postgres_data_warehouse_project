@@ -1,0 +1,39 @@
+
+---========================---
+---Check If Data base Exist---
+---========================---
+
+DO $$
+BEGIN
+   IF EXISTS (
+      SELECT FROM pg_database
+      WHERE datname = 'datawarehouse'
+   ) THEN
+      RAISE NOTICE 'Database exists';
+   END IF;
+END $$;
+
+
+---==========================---
+---Drop the existing Database---
+---========================== ---
+
+drop database datawarehouse;
+
+
+---========================---
+  ---Create a new Database---
+---========================---
+create database datawarehouse;
+
+
+---========================---
+	--Creating schemas---
+---========================---
+
+create schema Bronze;
+create schema sliver;
+create schema gold;
+
+
+
