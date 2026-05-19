@@ -5,3 +5,7 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 
 **My notion link to view my speration of concern**
 https://www.notion.so/Data-Warehouse-project-361c00e0955480c99a48cc472c2fe590?source=copy_link
+
+## 🏗️ Data Architecture
+
+The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
