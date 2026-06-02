@@ -30,13 +30,43 @@ Once the project is requirements are understood, update in the Notion to complet
 ## Design the Data Architecture: 
 
 Data Architecture approach: 
-Data Warehouse ------|
+Data Warehouse ------|  
 Data Lake      ------| 
 Data lakehouse ------|
 Data mesh      ------| 
 
-In this project i will be doing Data Warehouse project: 
+In this project i will be doing Data Warehouse project, In data warehouse project there four approach mentioned below: 
+1) Inmon 
+ Approach : Inmon
+ Main Idea : Build an enterprise-wide centralized data warehouse.
+ Modeling Style : first	Normalized model (3NF).
+ Best For : Large enterprises needing consistency.
+ Strengths : Single source of truth, strong governance, scalable for enterprise reporting.
+ Weaknesses : Slow implementation, complex, expensive.
 
+2) Kimball 
+  Approach : Kimball
+  Main Idea : Build business-focused data marts first.
+  Modeling Style : Dimensional model (Star/Snowflake schema).
+  Best For : BI dashboards, analytics, reporting. 
+  Strengths : Faster delivery, easy querying, high performance.
+  Weaknesses : Data silos possible, integration challenges.
+
+3) Data Vault
+  Approach : Data Vault
+  Main Idea : Store historical, auditable data with flexibility.
+  Modeling Style : 	Hubs, Links, Satellites
+  Best For : Changing business rules, big enterprise systems. 
+  Strengths : Highly scalable, audit-friendly, easy schema evolution.
+  Weaknesses : Complex model, harder for business users.
+
+5) Medallion Architecture
+  Approach : Medallion Architecture
+  Main Idea : Layered data refinement in lakehouse systems.
+  Modeling Style: 	Bronze → Silver → Gold
+  Best For : Big data, cloud analytics, streaming pipelines.
+  Strengths : Easy data quality management, scalable, supports ML.
+  Weaknesses : Not a traditional warehouse model, governance needed.
 
 
 
