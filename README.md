@@ -133,6 +133,22 @@ agg_           :  Aggregated table, agg_customers, agg_salesmonthly
 
 --------------------================================================-----------------------------------------------------
 
+**Create Datebase and schema. **
+
+Next Step refer Script folder to view the Code to create datae base and Schema. 
+
+
+--------------------================================================-----------------------------------------------------
+
+Starting with Bronze Layer : 
+
+first task: Analysing source system. Image stored on desktop.
+
+
+
+
+
+
 
 
   
