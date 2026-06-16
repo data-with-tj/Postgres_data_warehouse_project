@@ -132,7 +132,7 @@ agg_           :  Aggregated table, agg_customers, agg_salesmonthly
 
 
 --------------------================================================-----------------------------------------------------
-Create Database and scheme
+
 
 
   
