@@ -1,4 +1,4 @@
-
+/*
 
 ---=================================---
 --- Notes: Check If Data base Exist ---
@@ -10,7 +10,7 @@ If the database exists, it is dropped and recreated. Additionally, the script se
 WARNING:
 Running this script will drop the entire 'DataWarehouse' database if it exists.
 All data in the database will be permanently deleted. Proceed with caution and ensure you have proper backups before running this
-
+*/ 
 ---========================---
 ---Check If Data base Exist---
 ---========================---
