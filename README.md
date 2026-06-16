@@ -22,9 +22,9 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 • Data Quality: Cleanse and resolve data quality issues prior to analysis.
 • Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
 • Scope: Focus on the latest dataset only; historization of data is not required.
-• Documentation: Provide clear documentation of the data model to support both Dusiness stakeholders and analytics teams.
+• Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
 
-Once the project is requirements are understood, update in the Notion to complete the task & Epic 
+Once the project requirements are understood, update in the Notion to complete the task & Epic 
 [Epic - Requirement Analysis ] ---> [Task - Analyse and understand the requirements] 
 
 ## Design the Data Architecture: 
@@ -68,8 +68,43 @@ In this project i will be doing Data Warehouse project, In data warehouse projec
   Strengths : Easy data quality management, scalable, supports ML.
   Weaknesses : Not a traditional warehouse model, governance needed.
 
+--------------------================================================-----------------------------------------------------
+
+General Principles
+• Naming Conventions: Use snake_case, with lowercase letters and underscores (_) to separate words.
+• Language: Use English for all names.
+• Avoid Reserved Words: Do not use SQL reserved words as object names.
+
+Table Naming Conventions
+Bronze Rules
+• All names must start with the source system name, and table names must match their original names without renaming.
+• ‹sourcesystem›_‹entity>
+•‹sourcesystem>: Name of hisource system (e.g., crm, erp).
+• ‹entity› : Exact table name from the source system.
+• Example: crm_customer_info → Customer information from the CRM system.
+
+Silver Rules
+• All names must start with the source system name, and table names must match their original names without renaming.
+• ‹sourcesystem›_‹entity>
+• ‹sourcesystem› : Name of the source system (e.g., crm, erp).
+• ‹entity> : Exact table name from the source system.
+• Example: crm_customer_info → Customer information from the CRM system.
+
+Gold Rules
+• All names must use meaningful, business-aligned names for tables, starting with the category prefix.
+• ‹category>_‹entity›
+• ‹category» : Describes the role of thrtable, such as dim (dimension) or fact (fact table).
+• ‹entity› : Descriptive name of the table, aligned with the business domain (e.g., customers, products, sales).
+• Examples:
+• dim_customers → Dimension table for customer data.
+• fact_sales → Fact table containing sales transactions.
 
 
+**Glossary of Category Patterns**
+
+Dimension table:  dim_customer, dim_product
+fact_          :  Fact table, fact_sales
+agg_           :  Aggregated table, agg_customers, agg_salesmonthly
 
 
 
