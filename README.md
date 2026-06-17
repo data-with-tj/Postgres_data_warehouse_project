@@ -140,16 +140,22 @@ Next Step refer Script folder to view the Code to create datae base and Schema.
 
 --------------------================================================-----------------------------------------------------
 
-Starting with Bronze Layer : 
+**Starting with Bronze Layer : **
 
 first task: Analysing source system --> refer this 'drawio' for Analysis source model for our warehouse project. 
 
-second task: Data ingestion -- > Refer the script file for DDL.
+second task: Data ingestion -- > Refer the script file in GIT for DDL.
 > Creating DDL sql scrpit for all CSV files in the and CRM and ERP systems.
-> Create table using our naming conversation patter.
+> Create tables using our naming conversation patter.
 > Insert bulk data into the table.
 
-Table names for reference: 
+**Table names for reference:**
+> bronze.crm_cust_info
+> bronze.crm_prd_info
+> bronze.crm_sales_details
+> bronze.erp_cust_az12
+> bronze.erp_loc_a101
+> bronze.erp_px_cat_g1v2
 
 
  
