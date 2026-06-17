@@ -66,16 +66,16 @@ create table bronze.crm_prd_info(
 									prd_nm varchar (100),
 									prd_cost varchar(100),
 									prd_line varchar (100),
-									prd_start_dt varchar(100),
+									prd_start_dt date,
 									prd_end_dt date);
 
 create table bronze.crm_sales_details (
 										sls_ord_num varchar(100),
 										sls_prd_key varchar(100),
 										sls_cust_id int,
-										sls_order_dt date,
-										sls_ship_dt date,
-										sls_due_dt date,
+										sls_order_dt int,
+										sls_ship_dt int,
+										sls_due_dt int,
 										sls_sales int,
 										sls_quantity int,
 										sls_price int);
@@ -96,6 +96,6 @@ create table bronze.erp_px_cat_g1v2(
 								ID varchar (50),
 								CAT varchar(100),
 								SUBCAT varchar(100),
-								MAINTENANCE bool);
+								MAINTENANCE varchar(100));
 
 
