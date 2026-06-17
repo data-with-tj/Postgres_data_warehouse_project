@@ -99,3 +99,21 @@ create table bronze.erp_px_cat_g1v2(
 								MAINTENANCE varchar(100));
 
 
+Check the row count of each table: 
+
+select count(*) from bronze.crm_cust_info cci;
+
+select count(*) from bronze.crm_prd_info cpi;
+
+select count(*) from bronze.crm_sales_details csd ;
+
+select count(*) from bronze.erp_cust_az12 eca;
+
+select count(*) from bronze.erp_loc_a101 ela;
+
+select count(*) from bronze.erp_px_cat_g1v2 epcgv;
+
+
+
+
+
