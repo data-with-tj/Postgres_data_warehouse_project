@@ -47,5 +47,55 @@ create schema Bronze;
 create schema sliver;
 create schema gold;
 
+---------------------------------------------------------------------------------------------
+DDL script for Bronze schema
+
+create table bronze.crm_cust_info(
+									cst_id	int,
+									cst_key	varchar(50),
+									cst_firstname varchar(100),
+									cst_lastname varchar(100),
+									cst_marital_status	varchar(100),
+									cst_gndr varchar(100),
+									cst_create_date date);
+
+
+create table bronze.crm_prd_info(
+									prd_id int,
+									prd_key varchar (100),
+									prd_nm varchar (100),
+									prd_cost varchar(100),
+									prd_line varchar (100),
+									prd_start_dt varchar(100),
+									prd_end_dt date);
+
+create table bronze.crm_sales_details (
+										sls_ord_num varchar(100),
+										sls_prd_key varchar(100),
+										sls_cust_id int,
+										sls_order_dt date,
+										sls_ship_dt date,
+										sls_due_dt date,
+										sls_sales int,
+										sls_quantity int,
+										sls_price int);
+
+create table bronze.erp_cust_az12 (
+									CID varchar(100),
+									BDATE date,
+									GEN varchar (100));
+
+
+create table bronze.erp_loc_a101( 
+								  CID varchar(100),
+								  CNTRY varchar(100));
+
+
+
+create table bronze.erp_px_cat_g1v2(
+								ID varchar (50),
+								CAT varchar(100),
+								SUBCAT varchar(100),
+								MAINTENANCE bool);
 
 
